@@ -3,5 +3,11 @@
  https://github.com/peterkinget/MOSbiusCADFlow
 
 # How to use
-Copy Template_MOSbius_v5.asc file and build the schematic by modifying it. Attach bus labels to different nets for the tool to recognize them.
+Copy `Template_MOSbius_transistors.asc` file and build the schematic by modifying it. Attach bus labels to different nets for the tool to recognize them.
+I also created `Template_MOSbius_four_amps.asc` if you want to start with multiple Miller OTAs.
+Add Spice directives such as `.tran 0 10u` and run some simulations.
 
+# TODO
+- Explore better ways to organize the library (LTspice prefer a flat hierarchy, which isn't very elegant)
+- Add Chip_ID properties to the symbols for potential multi-chip setups.
+- Adjust the MOSFET models to better match the measurement results (particularly Vth).
