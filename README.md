@@ -2,6 +2,10 @@
  This is a cleaned up LTspice library for the MOSbius chip based on Prof. Peter Kinget's v4 library.
  https://github.com/peterkinget/MOSbiusCADFlow
 
+The major changes are the transistor symbols. I modified the symbols so that they are consistent to what we use in textbooks and Cadence Virtuoso. 
+The pin number annotations coorespond to the numbering on the breakout PCB.
+![](./screenshots/template_all_transistors.png)
+
 # How to use
 Copy `Template_MOSbius_transistors.asc` file and build the schematic by modifying it. Attach bus labels to different nets for the tool to recognize them.
 I also created `Template_MOSbius_four_amps.asc` if you want to start with multiple Miller OTAs.
